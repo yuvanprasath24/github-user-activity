@@ -21,6 +21,9 @@ Other event types are intentionally ignored to keep the output focused and reada
 
 1. Accepts a GitHub username as a command-line argument.
 2. Fetches recent public events from:
+```bash
+https://api.github.com/users/<username>/events
+```
 3. Parses the JSON response.
 4. Formats supported events into readable terminal output.
 5. Prints the result to the console.
