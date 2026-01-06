@@ -16,7 +16,6 @@ This CLI currently supports the following GitHub event types:
 Other event types are intentionally ignored to keep the output focused and readable.
 
 
-
 ## How It Works
 
 1. Accepts a GitHub username as a command-line argument.
@@ -44,3 +43,9 @@ git clone https://github.com/yuvanprasath24/simple-http-server.git
 
 cd github-user-activity
 mvn spring-boot:run "-Dspring-boot.run.arguments={username}"
+```
+## Project Reference
+
+This project is based on the [roadmap.sh](https://roadmap.sh/projects/github-user-activity) challenge.
+
+
