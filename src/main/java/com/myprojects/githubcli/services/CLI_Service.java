@@ -17,8 +17,8 @@ public class CLI_Service implements CommandLineRunner {
         System.out.println("Event Activity started");
         String username = args[0];
 
-        List<GitHubEvent> event =  eventService.getEvents(username);
-        eventService.print(event);
+        List<GitHubEvent> events =  eventService.getEvents(username);
+        eventService.printEvents(events);
     }
 
 }

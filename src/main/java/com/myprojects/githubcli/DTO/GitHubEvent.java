@@ -2,19 +2,9 @@ package com.myprojects.githubcli.DTO;
 
 public class GitHubEvent {
 
-    private String id;
     private String type;
-    private Actor actor;
     private Repo repo;
-    private String created_at;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    private Payload payload;
 
     public String getType() {
         return type;
@@ -22,14 +12,6 @@ public class GitHubEvent {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public Actor getActor() {
-        return actor;
-    }
-
-    public void setActor(Actor actor) {
-        this.actor = actor;
     }
 
     public Repo getRepo() {
@@ -40,11 +22,11 @@ public class GitHubEvent {
         this.repo = repo;
     }
 
-    public String getCreated_at() {
-        return created_at;
+    public Payload getPayload() {
+        return payload;
     }
 
-    public void setCreated_at(String created_at) {
-        this.created_at = created_at;
+    public void setPayload(Payload payload) {
+        this.payload = payload;
     }
 }
